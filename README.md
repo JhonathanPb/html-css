@@ -1,2 +1,2 @@
 # html-css
-Projetos e Desafios do Curso em Video
+Projetos, Exercicios e Desafios do Curso em Video
