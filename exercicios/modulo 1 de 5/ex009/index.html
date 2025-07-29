@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte e Pré Formatado</h2>
+    <p>O comando <code>document.getELementById('teste')</code> é escrito em JavaScript.</p>
+    <p>a TAG "Code" é chamado de fonte monoespacada. e iguala o espaço para melhor leitura de codigos, como no ex abaixo: </p>
+    <pre>
+        <code>
+            using System;
+            using System.Threading;
+            namespace Teste
+            {
+                public static class TesteCode
+                {
+                    public static void Main(String[] args)
+                    {
+                        String Answer;
+                        Console.WriteLine("Olá, Mundo. Esse é um Teste! Deseja TESTAR? S/N ");
+                        Answer = Console.ReadLine();
+                        if (Answer == "S")
+                        {
+        
+                            Console.WriteLine("Testando...");
+                            System.Threading.Thread.Sleep(2000);
+                            Console.WriteLine("Testando..");
+                            System.Threading.Thread.Sleep(2000);
+                            Console.WriteLine("Testando.");
+                            System.Threading.Thread.Sleep(2000);
+                            Console.Clear();
+                            Console.WriteLine("Teste CONCLUIDO com SUCESSO!!");
+                            System.Threading.Thread.Sleep(2000);
+                            Console.Clear();
+                            Console.WriteLine("Todos os sistemas OPERANTES!!");
+        
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Okay, Sistema não será testado!!"")
+                        }
+                         Console.WriteLine("\nPressione qualquer tecla para sair...");
+                         Console.ReadKey();
+                    }
+                }
+            }
+        </code>
+    </pre> 
+    <p>Para ficar com indentação, igual o Codigo a cima, foi necessario aplicar a TAG "pre" juntamente a TAG "code" para ficar legivel e visualmente organizado com indentação</p> <!--DICA: SELECIONAR O TEXTO QUE QUER E PRECIONAR SHIFT + TAB, FAZ COM QUE ELE TIRE O ESPAÇÕ-->
+
+    <h2>Citações</h2>
+    <p>Como diria o estoico, Sêneca: <q>Não é porque as coisas são difíceis que não ousamos; é porque não ousamos que elas são difíceis</q></p>
+    <p>A TAG "q" é para citações, uma QUOTE.</p>
+
+    <h2>Citações Completas</h2>
+    <p>Segundo, JK Rolling, no seu livro Harry Potter e o Prisioneiro de Askaban: </p>
+    <blockquote cite="https://www.google.com.br/books/edition/Harry_Potter_e_o_prisioneiro_de_Azkaban/qDYQCwAAQBAJ?hl=pt-BR&gbpv=1&dq=harry+potter+e+o+prisioneiro&printsec=frontcover"> 
+        Os que não são bruxos (mais comumente conhecidos pelo nome de trouxas) tinham muito medo da magia na época medieval, mas não tinham muita capacidade de reconhecê-la.
+    </blockquote>
+    <p>Aqui foi feito uma ciração direta a um trecho do livro de Harry Potter, nesse caso incluindo link com a TAG "cite" dentro da TAG "blockquote" para associar a citação a obra. Assim mantendo direito daqueles que criaram a citação. </p>
+
+    <h2>Abreciações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Languange">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, muito maneiro.</p>
+    <P>Aqui é uma maneira de explicar as abreviações usando a TAG "abbr"</P>
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS, honestamente mais simples do que imaginei</bdo></p>
+    <p>Honestamente, não achei uma TAG util num geral. Mas o professor nos mostrou por mostrar. TAG "bdo"</p>
+    
+</body>
+</html>
