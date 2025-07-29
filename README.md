@@ -12,6 +12,7 @@ Minha jornada será dividida em 3 fases:
 3.  **Estilização Criativa:** Usar CSS para dar cor, vida e um design profissional, saindo do básico!
 
 ## Para acompanhar
+Cotinue atendo para o inicio das publicações
 
 
 ---
