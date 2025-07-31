@@ -15,7 +15,46 @@
 
     <h1>Inserindo videos Hospedados Localmente</h1>
     <p>Esse video está hospedado no meu servidor</p>
+
+    <video src="midia-video/developing2.mp4" width="600" controls></video>
     
+    <p>A maneira que usei para colocar o audio, e a maneira mais simples basta colocar usar a TAG "audio" da seguinte forma:
+
+        <pre>
+            <code>
+                video src="midia-video/developing2.mp4" width="700" controls>/video>
+            </code>
+        </pre>
+
+        Usei a propriedade width em HTML, usada em conjunto com CSS, serve para definir a largura de um elemento na página web. Ela especifica a largura da área de conteúdo de um elemento, ou seja, a área dentro da borda e preenchimento, mas fora da margem. O valor da largura pode ser definido em diversas unidades, como pixels (px), porcentagens (%), em(s), rem(s), etc. No caso, como estamos focados em HTML5, usei a propriedade só para alterar o tamanho (visual) do video na pagina.
+    </p>
+
+    <p>Aqui temos outra maneira (maneira certa) de incluir videos: <br> 
+
+        <pre>
+            <code>
+                video width="600" controls>
+                    source src="midia-video/developing2.webm" type="video/webm">
+                    source src="midia-video/developing2.mkv" type="video/mkv">
+                    source src="midia-video/developing2.mp4" type="video/mp4">
+                    p>Seu navegador não tem compatibilidade com reprodução de video./p>
+                /video> 
+            </code>
+        </pre>     
+
+    </p>
+
+    <p>Nessa maneira de incluir video no site, o proprio navegador vai testar qual vai funcionar, testanto cada formato incluido até chegar na ultima opção que é a negativa. <br>
+
+        <video width="600" controls>
+            <source src="midia-video/developing2.mp4" type="video/mp4">
+            <source src="midia-video/developing2.webm" type="video/webm">
+            <source src="midia-video/developing2.mkv" type="video/mkv">
+            <p>Seu navegador não tem compatibilidade com reprodução de video.</p>
+        </video>
+
+    </p>
+
 
 
 
