@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/Icone/jp-icon.ico" type="image/x-icon">
-    <title>Imagens</title>
+    <title>Midias em HTML</title>
 </head>
 <body>
-    <h1></h1>
-    <p>Para inserir imagens no HTML, é simples basta usar a TAG "img". Mas e quando queremos que o site fique bom em multiplos dispositovos que acessam internet (laptop, tablet, celular, etc), ai precisamo usar a TAG "picture" e ter a mesma imgame em tamanhos difrentes pequena (300x300), media (700x700) e grande (1000x1000). não há quantidade exata de imagens que precisam ser adaptadas, mas nesse exercicio usamos apenas esses três.</p>
+    <h1>Imagens dinâmicas</h1>
+    <p>Para inserir imagens no HTML, é simples basta usar a TAG "img". Mas e quando queremos que o site fique bom em multiplos dispositovos que acessam internet (laptop, tablet, celular, etc), ai precisamo usar a TAG "picture" e ter a mesma imgame em tamanhos difrentes pequena (300x300), media (700x700) e grande (1000x1000). não há quantidade exata de imagens que precisam ser adaptadas, mas nesse exercicio usamos apenas esses três. Vamos aos Testes: </p>
+    <p>Tente abrir esse site em dispositivos diferentes, ou simplesmente altere o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Grande">
+    </picture>
+
+    <p>Para adaptar a imagem dentro da "picture", basta usar "source media=" defina o tamanho max (no ex abaixo usei "max-width: 1050px"), selecione a imagem que substituira caso o tamanho seja inferior a 1000px, e e selecione o tipo de imagem.</p>
+    <pre>
+        <code>
+            picture>
+                source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+                img src="imagens/foto-g.png" alt="Foto Grande">
+            /picture>
+        </code>
+    </pre>
+
+    <p>Caso tenha mais opções, defina sempre ACIMA, as outras caracteristicas. Ex:</p>
+    <pre>
+        <code>
+            picture>
+                source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+                source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+                img src="imagens/foto-g.png" alt="Foto Grande">
+            /picture>
+        </code>
+    </pre>
+    <p>Para testar no navegador outros dispositivos faça o seguinte. No Chrome vá nos 3pontinho no canto inferior da tela. Vá at a opção "Mais ferramentas" e selecione "Ferramenta do Programador" e basta escolher qual dispositivo quer testar o seu site. (INSERIR TUTORIAL)</p>
     
 </body>
 </html>
