@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midas HTML 2</title>
+</head>
+<body>
+    <h1>Reproduzindo Audio</h1>
+    <p>Todo o assunto da pagina anterior se aplica aqui, audios são muito grandes em geral, e sempre é bom ficar esperto com os direitos autorais.</p>
+    <p>Vamos aprender a Reprozir audios em HTML5</p>
+
+    <audio src="midia/good-star.mp3" controls autoplay></audio>
+    <p>Provavelmente já ouviu essa musica em algum video no youtube ou até na televisão, eu não duvido. O nome da musica e <em>Good Star</em>, ele á distribuida gratuitamente pelo Youtube. <br> A maneira que usei para colocar o audio, e a maneira mais simples basta colocar usar a TAG "audio" da seguinte forma:
+
+    <pre>
+        <code>
+            audio src="midia/good-star.mp3" controls></audio>
+        </code>
+    </pre>
+
+    e protno, o audio fica pronto para qualquer um pode clicar e escutar. Dependendo do Navegador, talves o formato do audio (mp3 nesse caso) não funcione, e para isso é necessario ter os outros formatos. Os formatos de áudio mais comuns e amplamente suportados pelos navegadores são <em>MP3</em>, <em>WAV</em> e <em>OGG</em>, e para ter um site totalmnete compativel com navegadores, é necessario ter os três foramtos de audio. a TAG "controls" e "autoplay", são atributos utilizados em elementos multimídia (como video e audio no HTML) para controlar a reprodução e a interação do usuário com esses elementos. <br> <strong>Control</strong>: Exibe os controles de reprodução padrão (como play/pause, volume, barra de progresso) para o usuário interagir com o vídeo ou áudio. <br> <strong>Autoplay</strong>: Quando um elemento de mídia (como video ou audio) possui o atributo autoplay, o navegador tenta iniciar a reprodução do conteúdo multimídia assim que possível após o carregamento da página e do elemento. </p>
+
+    <p>Aqui temos, outra maneira de incluir audios em HTML5:
+
+    <pre>
+        <code>
+            audio preoload="metadata">
+                source src="midia/good-star.mp3" type="audio/mpeg">
+                source src="midia/good-star.ogg" type="audio/ogg">
+                source src="midia/good-star.wav" type="audio/wav">
+                p> infelizmente seu navegador não consegue Reprozir audio, a href="midia/good-star.mp3">clique aqui para baixar o arquivo mp3/a>/p>
+            /audio>
+        </code>
+    </pre>
+    Nessa maneira de incluir audio no site, o proprio navegador vai testar qual vai funcionar, priemiro ele vai no arquivo mpeg, se não funcionar ele vai ao ogg e dai por diante até chegar na ultima opção que é a de download (opcional). Aquele pre Aqui em baixo está o audio nesse metodo:</p>
+
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/good-star.mp3" type="audio/mpeg">
+        <source src="midia/good-star.ogg" type="audio/ogg">
+        <source src="midia/good-star.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz audio, <a href="midia/good-star.mp3">clique aqui para ouvir ou baixar</a></p>
+    </audio>
+
+    <p><strong>Preload</strong>: A tag preload em arquivos de mídia, como áudio e vídeo, serve para informar ao navegador para baixar e armazenar em cache esses recursos com antecedência, mesmo antes de serem realmente necessários na página. Isso pode acelerar o carregamento da página e melhorar a experiência do usuário, pois o navegador já terá o arquivo pronto quando for solicitado. <br> Como funciona: <br>
+    <strong>preload="none"</strong>:
+    O navegador não baixa o arquivo de mídia, economizando dados, mas pode haver um atraso na reprodução quando o usuário interagir com o elemento. <br>
+    <strong>preload="metadata"</strong>:
+    O navegador baixa apenas os metadados do arquivo (tamanho, duração, etc.), o que permite uma prévia rápida do conteúdo e um carregamento mais rápido do player, mas o vídeo em si ainda pode levar um tempo para carregar. <br> 
+    <strong>preload="auto"</strong>:
+    O navegador baixa todo o arquivo de mídia, o que garante a reprodução imediata quando o usuário interage com o elemento, mas pode <strong>consumir mais dados e tempo de carregamento inicial. </strong> </p>
+  
+
+    <p><a href="index.html" target="_self" rel="prev">&#x2B05; Pagina Anterior</a> <a href="#" target="_self" rel="next">Proxima Pagina &#x27A1;</a> </p>
+
+    
+</body>
+</html>
