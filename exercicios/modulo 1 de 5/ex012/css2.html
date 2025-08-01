@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Icone/jp-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Estilo Externo</title>
 </head>
 <body>  
     <h1>Estilos Externos</h1>
     <h2>O que é Estilo Extern0</h2>
     <p>Em CSS, estilo externo refere-se à prática de armazenar as regras de estilo em um arquivo separado, com extensão .css, e vincular esse arquivo ao documento HTML. Isso permite que você aplique o mesmo estilo a várias páginas HTML, facilitando a manutenção e a organização do seu projeto web. </p>
+    <h2>Como aplicar?</h2>
+    <p>Para aplicar um estilo externo em CSS, crie um arquivo .css com as regras de estilo desejadas e, em seguida, vincule esse arquivo à sua página HTML usando a tag "link" dentro da seção "head" igual ao exemplo abaixo: </p>
+    <pre>
+        <code>
+            head>
+                meta charset="UTF-8">
+                meta name="viewport" content="width=device-width, initial-scale=1.0">
+                l<strong>ink rel="stylesheet" href="style.css"></strong>
+                title>Estilo Local</title>
+            /head>
+        </code>
+    </pre>
+    <p>Obs.: O nome é de sua escolha!</p>
+
+    <h2>Fique atento as Regras</h2>
+    <p>Em CSS, as regras "@" (também conhecidas como regras @ ou @-rules) são usadas para controlar o comportamento do CSS e adicionar funcionalidades especiais. As regras @ são sempre precedidas pelo caractere "@" seguido por um nome e, geralmente, por um bloco de declarações. Elas são usadas para importar folhas de estilo, definir @media queries para estilos responsivos, criar animações personalizadas e muito mais. por exemplo no documento .css que abrir ficaria assim: </p>
+    <pre>
+        <code>
+            @charset "UTF-8";
+
+            body {
+                background-color: beige;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                color: red;
+            }
+        </code>
+    </pre>
+    <p>Essa é a maneira é a mais versatil, e tras mais levesza e organização para toda a pagina. Outra coisa que podemos afazer é adicionar mais de um documento .css para personalizar paginas com mais estilos. </p>
 
 
     <a href="css.html">pagina anterio</a> <a href="css3.html" target="_self" rel="next">proxima pagina</a>
